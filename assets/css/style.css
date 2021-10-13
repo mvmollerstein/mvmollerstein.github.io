@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-color: #fff;
   font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: black !important;
   font-weight: 200;
   font-size: 1.25rem !important;
@@ -541,11 +542,10 @@ footer {
 }
 
 .grid-item {
-  width: calc(95% / 2);
+  width: calc(90% / 2);
   transform: scale(1);
   margin-bottom: 10%;
-  margin-left: 2%;
-
+  margin-left: 8%;
 }
 
 .grid-item:nth-last-of-type(-n+2) {
@@ -553,11 +553,11 @@ footer {
 }
 
 .grid-item img {
-  width: 100%;
+  width: 80%;
 }
 
 .grid-item video {
-  width: 100%;
+  width: 80%;
 }
 
 .grid-item:nth-child(2n) {
@@ -1004,12 +1004,14 @@ ul.exp-timeline > li:last-of-type:after {
 
 #intro_wrapper {
     width: 100%;
+    padding-top: 3%;
     overflow: hidden; /* will contain if #first is longer than #second */
 }
 #intro_pic {
     width: 33%;
     float:left; /* add this */
     height: 100vh;
+    padding-top: 2%;
 }
 #intro_text {
     width: 65%;

@@ -26,7 +26,7 @@ $(document).ready(function(){
         threshold: 0,
         rootMargin: "0px 0px -100px 0px"
     };
-    
+
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
@@ -37,7 +37,7 @@ $(document).ready(function(){
             }
         })
     }, appearOptions);
-    
+
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
@@ -54,10 +54,6 @@ $(document).ready(function(){
         appearOnScroll.observe(slider2);
     });
 
-    $('.backTop').click(function(){
-		$("html, body").animate({scrollTop : 0},800);
-		return false;
-    });
 
     $('.menu-icon').click(function(){
         $('.menu').addClass("menu-show");
