@@ -36,65 +36,96 @@
       }
     </style>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script >
-    var text = ["&nbsp;Fashion", "&nbsp;Graphic", "&nbsp;Product", "&nbsp;&nbsp;&nbsp;&nbsp;UX/UI"];
-    var counter = 0;
-    var elem = $("#animation");
-    setInterval(change, 1500);
-    function change() {
-      $("#animation").fadeOut("fast", function(){
-          $("#animation").html(text[counter]);
-          counter++;
-          if(counter >= text.length) { counter = 0; }
-          $("#animation").fadeIn("fast");
-      });
-    }
-    </script>
-
 </head>
 
 
-<body class="" >
 
-  <div class="menubox">
-    <a href="about.html" id="menu">about.me</a>
-    <a href="fashion.html" id="menu">fashion.design</a>
-    <a href="ux.html" id="menu">ux.ui</a>
+<body class="">
+
+<div id="fashion_wrapper" style="top:50vh">
+
+
+  <div id="fashion_pic">
+    <img src="./assets/img/artus.png">
+  </div>
+
+  <div class="text_wrapper" >
+    <div class="fashion_index_corpus">
+      <p id="fashion_headline">
+         Artus
+      </p>
+      <p id="fashion_text">
+        The dark, mysterious raven has been depicted in literature and legends
+        through the ages. The Artus collection is inspired by the saga of Odin
+        and puts focus on bold, dramatic, figure-hugging designs. Featuring heavy
+        vegan leather, silk, and feather details.
+      </p>
+    </div>
   </div>
 
 
-<div id="intro_wrapper">
-    <div id="intro_pic">
-      <img src="./assets/img/index.webp" width="100vw">
-    </div>
+</div>
 
+<div id="fashion_wrapper" style="top:150vh">
+
+  <div id="fashion_pic">
+    <img src="./assets/img/justanotherday.png">
+  </div>
 
   <div class="text_wrapper" >
 
-    <div class="index_corpus">
-      <p id="headline">
-         Hi, I am <span style="background-color: palegreen">Valentina</span>,
+    <div class="fashion_index_corpus">
+      <p id="fashion_headline">
+         Eve, its just another day
       </p>
         <!-- <hr> -->
-      <p id="intro_text">
-          I'm a <span style="display: inline-block; width: 6vw;" id="animation"> &nbsp;&nbsp;&nbsp;&nbsp;UX/UI </span> Designer based in Berlin, Germany with experience in
-          delivering end-to-end UX/UI design for websites and mobile apps.
-
-         I solve problems with beautiful, user-centric designs and am constantly
-         looking to learn new things everyday.
+      <p id="fashion_text">
+        Eve combines femininity with romantic elements. Go-to chic, feminine
+        pieces with unexpected silhouettes in nude shades. The combination of
+        cotton, silk, cashmere, angora, and linen adds the perfect amount of comfort
+        to a polished look.
       </p>
     </div>
 
-    <a href="mailto:valentinacmueller@gmail.com" id=say_hi> email@me </a>
+  </div>
+
+</div>
+
+<div id="fashion_wrapper" style="top:250vh">
+
+  <div id="fashion_pic">
+    <img src="./assets/img/pup.png">
+  </div>
+
+  <div class="text_wrapper" >
+
+    <div class="fashion_index_corpus">
+      <p id="fashion_headline">
+         Puppet
+      </p>
+        <!-- <hr> -->
+      <p id="fashion_text">
+        Must-have items for any true streetwear fan out there. Featuring
+         constructions from velvet to vegan leather. Focusing on asymmetrical
+         and oversized cuts - comfy yet crisp.
+      </p>
+    </div>
 
   </div>
 
 </div>
 
 
-<footer>
+<div class="menubox">
+  <a href="index.html" id="menu">home</a>
+  <a href="about.html" id="menu">about.me</a>
+  <a href="ux.html" id="menu">ux.ui</a>
+</div>
+
+
+</body>
+
+<footer style="top: calc(300vh + 2px)">
     <p> <span class="name_bottom">VALENTINA MÜLLER </span><span class="copyright">© 2022. All Rights Reserved.</span></p>
     <div id="footer-links">
         <ul>
@@ -116,8 +147,5 @@
         </ul>
     </div>
 </footer>
-
-</body>
-
 
 </html>

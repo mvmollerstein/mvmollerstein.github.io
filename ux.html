@@ -36,65 +36,72 @@
       }
     </style>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script >
-    var text = ["&nbsp;Fashion", "&nbsp;Graphic", "&nbsp;Product", "&nbsp;&nbsp;&nbsp;&nbsp;UX/UI"];
-    var counter = 0;
-    var elem = $("#animation");
-    setInterval(change, 1500);
-    function change() {
-      $("#animation").fadeOut("fast", function(){
-          $("#animation").html(text[counter]);
-          counter++;
-          if(counter >= text.length) { counter = 0; }
-          $("#animation").fadeIn("fast");
-      });
-    }
-    </script>
-
 </head>
 
 
-<body class="" >
 
-  <div class="menubox">
-    <a href="about.html" id="menu">about.me</a>
-    <a href="fashion.html" id="menu">fashion.design</a>
-    <a href="ux.html" id="menu">ux.ui</a>
+<body class="">
+
+<div id="ux_wrapper" style="top:65vh">
+
+
+  <div id="ux_pic">
+    <img src="./assets/img/mockups_urgrow.webp" width="100%">
   </div>
 
-
-<div id="intro_wrapper">
-    <div id="intro_pic">
-      <img src="./assets/img/index.webp" width="100vw">
-    </div>
-
-
   <div class="text_wrapper" >
-
-    <div class="index_corpus">
-      <p id="headline">
-         Hi, I am <span style="background-color: palegreen">Valentina</span>,
+    <div class="ux_index_corpus">
+      <p id="ux_headline">
+         Urgrow
       </p>
-        <!-- <hr> -->
-      <p id="intro_text">
-          I'm a <span style="display: inline-block; width: 6vw;" id="animation"> &nbsp;&nbsp;&nbsp;&nbsp;UX/UI </span> Designer based in Berlin, Germany with experience in
-          delivering end-to-end UX/UI design for websites and mobile apps.
-
-         I solve problems with beautiful, user-centric designs and am constantly
-         looking to learn new things everyday.
+      <p id="ux_text">
+        Urgrow is an innovative indoor garden that cares for itself and grows
+        fresh, flavorful herbs, fruits, and vegetables. The app is a helpful
+        guide on how to make the most of your harvest. Including the ability
+        to snap and upload a picture of a plant – or pest – and having an expert
+         gardener identify it for you. Consequently, you will receive alerts
+         reminding you of your plant maintenance duties.
       </p>
     </div>
-
-    <a href="mailto:valentinacmueller@gmail.com" id=say_hi> email@me </a>
-
   </div>
 
 </div>
 
+<div id="ux_wrapper" style="top:165vh">
 
-<footer>
+  <div id="ux_pic">
+    <img src="./assets/img/mockup_banking.webp" width="100%">
+  </div>
+
+  <div class="text_wrapper" >
+    <div class="ux_index_corpus">
+      <p id="ux_headline">
+         Smab
+      </p>
+      <p id="ux_text">
+          With Smab we created a human-centred approach, crafting an experience
+           around everyday needs banking at your fingertips. Save and simple.
+           Smab covers usual smart baking actions but also features to temporarily
+           block and unblock your card, adjusting daily spending limits, storing
+           account statements and documents, and helps you searching for ATMs nearby.
+
+
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="menubox">
+  <a href="index.html" id="menu">home</a>
+  <a href="fashion.html" id="menu">fashion.design</a>
+  <a href="about.html" id="menu">about.me</a>
+</div>
+
+
+</body>
+
+<footer style="top: calc(200vh + 2px)">
     <p> <span class="name_bottom">VALENTINA MÜLLER </span><span class="copyright">© 2022. All Rights Reserved.</span></p>
     <div id="footer-links">
         <ul>
@@ -116,8 +123,5 @@
         </ul>
     </div>
 </footer>
-
-</body>
-
 
 </html>

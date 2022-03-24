@@ -36,63 +36,46 @@
       }
     </style>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script >
-    var text = ["&nbsp;Fashion", "&nbsp;Graphic", "&nbsp;Product", "&nbsp;&nbsp;&nbsp;&nbsp;UX/UI"];
-    var counter = 0;
-    var elem = $("#animation");
-    setInterval(change, 1500);
-    function change() {
-      $("#animation").fadeOut("fast", function(){
-          $("#animation").html(text[counter]);
-          counter++;
-          if(counter >= text.length) { counter = 0; }
-          $("#animation").fadeIn("fast");
-      });
-    }
-    </script>
-
 </head>
 
 
-<body class="" >
+
+<body class="">
+
+<div id="intro_wrapper">
+
+    <div class="about_corpus">
+      <p id="about_headline">
+        I am Valentina Müller
+      </p>
+        <!-- <hr> -->
+      <p id="about_text">
+        I am a Visual Designer with a passion for slick designs and perfectly
+        balanced color schemes. For the past 15 years I have been travelling the
+        globe working in the fashion industry. Wether on the runway or behind
+        the scenes - from Vogue to Garnier, or Malan Breton to Prada - in over
+        300 projects I have helped bring fantasies come to life.
+        In the same time I completed my studies in educational sciences
+        (with a focus on human-computer interaction) and psychological
+        counselling. Ever since, I have worked at the intersection of
+        Design, UX, Art and Fashion.
+
+        Feel free to reach out. Whether we grab a cup of coffee or meet up
+        online, I'm (almost) always up to discuss design trends, digital ideas
+        or the top three lip syncs of RuPauls Drag Race. Click here to download
+        my CV.
+      </p>
+    </div>
+
+  </div>
 
   <div class="menubox">
-    <a href="about.html" id="menu">about.me</a>
+    <a href="index.html" id="menu">home</a>
     <a href="fashion.html" id="menu">fashion.design</a>
     <a href="ux.html" id="menu">ux.ui</a>
   </div>
 
-
-<div id="intro_wrapper">
-    <div id="intro_pic">
-      <img src="./assets/img/index.webp" width="100vw">
-    </div>
-
-
-  <div class="text_wrapper" >
-
-    <div class="index_corpus">
-      <p id="headline">
-         Hi, I am <span style="background-color: palegreen">Valentina</span>,
-      </p>
-        <!-- <hr> -->
-      <p id="intro_text">
-          I'm a <span style="display: inline-block; width: 6vw;" id="animation"> &nbsp;&nbsp;&nbsp;&nbsp;UX/UI </span> Designer based in Berlin, Germany with experience in
-          delivering end-to-end UX/UI design for websites and mobile apps.
-
-         I solve problems with beautiful, user-centric designs and am constantly
-         looking to learn new things everyday.
-      </p>
-    </div>
-
-    <a href="mailto:valentinacmueller@gmail.com" id=say_hi> email@me </a>
-
-  </div>
-
-</div>
-
+</body>
 
 <footer>
     <p> <span class="name_bottom">VALENTINA MÜLLER </span><span class="copyright">© 2022. All Rights Reserved.</span></p>
@@ -116,8 +99,5 @@
         </ul>
     </div>
 </footer>
-
-</body>
-
 
 </html>
