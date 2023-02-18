@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+    :root
+    {
+        --var-color-one: #f53fe1
+    }
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Charmonman', cursive;
+        color: #161616;
+    }
+    html,
+    body{
+        background-color: #f5efe1;
+        height: 200px;
+    }
+    h1 
+    {
+        position: absolute;
+        top: 40vh;
+        width: 100%;
+        text-align: center;
+        font-size: 6rem;
+        letter-spacing: 2px;
+    }
+    ul 
+    {
+        position: absolute;
+        right: 5%;
+        top: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    ul li 
+    {
+        height: 4rem;
+        display: flex;
+        overflow: hidden;
+        /* background-color: #161616; */
+        margin-bottom: 0.5rem;
+        justify-content: flex-end;
+    }
+    ul li span
+    {
+        display: block;
+        line-height: 3rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0.05rem;
+        transform: translateY(200%);
+
+    }
+    ul li span.active
+    {
+        transform: translateY(0%);
+        transition: 1s ease-out;
+    }
+    ul li:hover
+    {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+.gap
+{
+    width: 3rem;
+}
+
+
+
+.anime
+	{
+		height: 4rem;
+        display: flex;
+        overflow: hidden;
+        /* background-color: #161616; */
+        margin-bottom: 0.5rem;
+        justify-content: flex-end;
+	}
+	.anime .card-title
+	{
+		/* display: block;
+        line-height: 3rem;
+        font-size: 3rem;
+        text-transform: uppercase; */
+        /* margin: 0.05rem; */
+        transform: translateY(200%);
+	}
+	.anime .card-title.active
+    {
+        transform: translateY(0%);
+        transition: 1s ease-out;
+    }
+	.gap
+{
+    width: 3rem;
+}
+</style>
+<body>
+    <h1>welcome</h1>
+
+    <ul>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+        <li>
+            <span>Lorem, ipsum dolor.</span>
+        </li>
+    </ul>
+    <script>
+        let Listitem = [...document.querySelectorAll('li')];
+        let options= {
+            rootMargin:'0%',
+            threshold: 1.0
+        }
+        let observer = new IntersectionObserver(showitem, options);
+
+        function showitem(entries)
+        {
+
+            entries.forEach(entry =>{
+                if(entry.isIntersecting)
+                {
+                    let letters = [...entry.target.querySelectorAll('span')];
+                    letters.forEach((letter, idx) => {
+                        setTimeout(()=>{
+                            letter.classList.add('active');
+                        }, idx * 20)
+                    })
+                    entry.target.children[0].classList.add('active');
+                }
+            })
+        }
+
+        Listitem.forEach(item =>{
+            let newstring ='';
+            let itemText = item.children[0].innerText.split('');
+            itemText.map(letter => (newstring += letter == '' ? `span class='gap'></span>` : `<span>${letter}</span>`))
+            item.innerHTML = newstring;
+            observer.observe(item);
+        })
+    </script>
+</body>
+</html>

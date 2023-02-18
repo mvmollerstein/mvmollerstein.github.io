@@ -1,0 +1,346 @@
+@media only screen and (max-width: 1500px) 
+{
+  html,
+  body 
+  {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 1370px) 
+{
+  html,
+  body 
+  {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 1200px) 
+{
+  html,
+  body 
+  {
+    font-size: 8.5px;
+  }
+  /* navbar  */
+  .navbar.navbar-wrapper {
+    height: auto;
+    margin: 3rem;
+  }
+
+  /* navbar  */
+
+  .ui-design-sec .ui-img1 {
+    object-fit: cover;
+    max-height: 60rem;
+    min-height: 60rem;
+}
+.ui-design-sec .ui-img2 {
+  object-fit: cover;
+  max-height: 40rem;
+  min-height: 40rem;
+}
+.ui-design-sec .ui-img3 {
+  object-fit: cover;
+  max-height: 19rem;
+  min-height: 19rem;
+}
+.ui-design-sec .ui-img4, .ui-design-sec .ui-img5 {
+  object-fit: cover;
+  max-height: 66rem;
+  min-height: 66rem;
+}
+.ui-design-sec .ui-img6, .ui-design-sec .ui-img7{
+  object-fit: cover;
+  max-height: 33rem;
+  min-height: 33rem;
+}
+.ui-design-sec .ui-img8 
+{
+object-fit: contain;
+max-height: unset;
+min-height: unset;
+}
+}
+
+@media only screen and (max-width: 992px) {
+
+  html,
+  body {
+    font-size: 7.5px;
+  }
+
+
+  .visuals-sec {
+    .r1p-1 {
+
+        .card {
+
+            img {
+              max-height: unset;
+              min-height: unset;
+          object-fit: contain;
+
+            }
+        }
+    }
+
+    .r2p-1 {
+        .card {
+            img {
+              max-height: unset;
+              min-height: unset;
+          object-fit: contain;
+
+            }
+        }
+    }
+
+    .r2p-2 {
+        img {
+          max-height: unset;
+          min-height: unset;
+          object-fit: contain;
+
+        }
+    }
+
+    .r2p-3 {
+        img {
+          max-height: unset;
+          min-height: unset;
+          object-fit: contain;
+        }
+    }
+}
+.product-design-sec .card .pimg4
+{
+  max-height: 40rem;
+  min-height: 40rem;
+}
+.product-design-sec .card .pimg5
+{
+  max-height: unset;
+min-height: unset;
+object-fit: contain;
+}
+.visuals-sec .r1p-1 .card .img2,
+.visuals-sec .r1p-1 .card .img3
+{
+max-height: 53rem;
+min-height: 53rem;
+object-fit: cover;
+}
+.visuals-sec .r2p-1 .card .img4,
+.visuals-sec .r2p-1 .card .img5
+{
+  max-height: 48rem;
+min-height: 48rem;
+  object-fit: cover;
+
+}
+.visuals-sec .r2p-3 .img8,
+.visuals-sec .r2p-3 .img9
+{
+  max-height: 53rem;
+  min-height: 53rem;
+  object-fit: cover;
+}
+.visuals-sec .r2p-2 .img6,
+.visuals-sec .r2p-2 .img7
+{
+  object-fit: cover;
+  max-height: 57rem;
+  min-height: 57rem;
+}
+.ui-design-sec .ui-img1 
+{
+object-fit: cover;
+max-height: 75rem;
+min-height: 75rem;
+
+}
+.ui-design-sec .ui-img3,
+.ui-design-sec .ui-img2
+{
+  object-fit: contain;
+max-height: unset;
+min-height: unset;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+  html,
+  body {
+    font-size: 5.5px;
+  }
+
+  .visuals-sec .r1p-1 .card .img2,
+.visuals-sec .r1p-1 .card .img3
+{
+max-height: unset;
+min-height: unset;
+object-fit: contain;
+}
+
+  // thank-you section 
+.thank-you
+{
+    .card
+    {
+        .card-body
+        {
+            .card-title
+            {
+    text-align: left;
+            }
+            .card-subtitle
+            {
+    text-align: left;
+            }
+    
+            .card-text
+            {
+              text-align: left;
+            }
+        }
+        img 
+        {
+            margin-bottom: 2rem;
+            display: none;
+        }
+    }
+}
+// thank-you section 
+}
+
+@media only screen and (max-width: 576px) {
+
+  html,
+  body {
+    font-size: 6.5px;
+  }
+  .password-section .row
+  {
+    padding: 0rem 3rem;
+
+  }
+  .product-design-sec .card .pimg4
+  {
+    max-height: unset;
+    min-height: unset;
+    object-fit: contain;
+  }
+  .product-design-sec .card .pimg3
+  {
+    max-height: unset;
+    min-height: unset;
+    object-fit: contain;
+  }
+  .visuals-sec .r2p-1 .card .img4,
+.visuals-sec .r2p-1 .card .img5
+{
+  max-height: unset;
+  min-height: unset;
+  object-fit: contain;
+
+}
+.visuals-sec .r2p-3 .img8,
+.visuals-sec .r2p-3 .img9
+{
+  max-height: unset;
+  min-height: unset;
+  object-fit: contain;
+}
+.visuals-sec .r2p-2 .img6,
+.visuals-sec .r2p-2 .img7
+{
+  max-height: unset;
+  min-height: unset;
+  object-fit: contain;
+}
+.ui-design-sec .ui-img1
+{
+  object-fit: contain;
+  min-height: unset;
+  max-height: unset;
+
+}
+.ui-design-sec .ui-img4, .ui-design-sec .ui-img5
+{
+  object-fit: contain;
+  min-height: unset;
+  max-height: unset;
+}
+.ui-design-sec .ui-img6, .ui-design-sec .ui-img7
+{
+  object-fit: contain;
+  min-height: unset;
+  max-height: unset;
+}
+.index .ul .dropdown-menu1 .dropdown-item
+{
+ color: #000000;
+}
+.footer a
+{
+  color: #000000;
+}
+.contact-wrapper .form-wrapper .form-header h1
+{
+  color: #000000;
+}
+.contact-wrapper .form-wrapper input
+{
+  color: #000000;
+  border: 0.5px solid #000000;
+  &::placeholder
+  {
+    color: #000000;
+  }
+}
+.navbar.index .manu ul li a
+{
+  color: #000000;
+}
+.contact-wrapper .form-wrapper textarea
+{
+  border: .5px solid #000000;
+  color: #000000;
+  &::placeholder
+  {
+    color: #000000;
+  }
+}
+.password-section .row input
+{
+  color: #000000;
+  border: .5px solid #000000;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link
+{
+  color: #000000;
+}
+.hero-section .row .card-title
+{
+  margin-left: 3rem;
+}
+}
+@media only screen and (max-width: 380px) {
+
+  html,
+  body 
+  {
+    font-size: 6px;
+  }
+/* footer section start*/
+.footer {
+  .content {
+      flex-direction: column;
+      gap: 2rem;
+  }
+}
+
+/* footer section end*/
+
+}

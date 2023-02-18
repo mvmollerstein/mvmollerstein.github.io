@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+</head>
+<style>
+	.anime {
+	/* background: red; */
+	padding: 0rem;
+	margin: 0rem;
+	height: 7rem;
+	overflow: hidden;
+	}
+
+	.fade-in-element
+	{
+		opacity: 0;
+	}
+	.fade-in-element.visible {
+		opacity: 1;
+		animation: animatename 1s linear forwards;
+	}
+
+	@keyframes animatename {
+		0% {
+			transform: translateY(4rem);
+		}
+
+		100% {
+			transform: translateY(0rem);
+		}
+	}
+
+	#css-loader {
+		width: 100%;
+		background: #fff;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.loader {
+		width: 48px;
+		height: 48px;
+		border: 3px solid #000;
+		border-bottom-color: transparent;
+		border-radius: 50%;
+		display: inline-block;
+		position: relative;
+		box-sizing: border-box;
+		animation: rotation 1s linear infinite;
+	}
+
+	.loader::after {
+		content: '';
+		position: absolute;
+		box-sizing: border-box;
+		left: 20px;
+		top: 31px;
+		border: 10px solid transparent;
+		border-right-color: #000;
+		transform: rotate(-40deg);
+	}
+
+	@keyframes rotation {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+</style>
+
+<body onload="loader()">
+
+	<!-- loader  -->
+	<div id="css-loader">
+		<span class="loader"></span>
+	</div>
+	<!-- loader  -->
+	<div id="body-wrapper" style="display: none;">
+
+		<!-- Start Navbar Area -->
+		<nav class="index d-none d-sm-block ">
+			<div class="container-fluid">
+				<ul class="ul">
+					<li class="nav-item ">
+						<a class="nav-link" href="#">
+							MENU
+						</a>
+						<ul class="dropdown-menu1">
+							<li><a class="dropdown-item" href="#branches">branches</a></li>
+							<li><a class="dropdown-item" href="#contact">contact</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- End Navbar Area -->
+
+		<!-- for mobile  -->
+		<!-- Start Navbar Area -->
+		<nav class="navbar index d-block d-sm-none text-end" style="text-align: right;">
+			<div class="container-fluid">
+				<div class="manu text-end" style="text-align: right;" >
+					<ul class="text-end" style="text-align: right;">
+
+						<li class="menu text-end" style="text-align: right;">
+							<a href="#" type="button" onclick="menupopup()">MENU</a>
+						</li>
+						<li class="text-end" style="text-align: right;">
+							<a href="#branches">branches</a>
+						</li>
+						<li class="text-end" style="text-align: right;">
+							<a href="#contact" type="button">contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar Area -->
+
+		<!-- popup contact form  -->
+		<section class="mobile-menu d-none" id="menuformob">
+			<img src="./assets/img/ico_close.svg" alt="close" id="index-menu">
+			<ul>
+				<li class="nav-item">
+					<a class="nav-link " href="./coming-soon.php">Creative Direction</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="./coming-soon.php">Fashion Design</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="./product-design.php">Product Design</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./ui-design.php">UI Design</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="./coming-soon.php">UX Writing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="./visuals.php">Visuals</a>
+				</li>
+			</ul>
+		</section>
+		<!-- popup contact form  -->
+
+		<!-- hero-section start -->
+		<div class="hero-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 mx-auto my-0">
+						<h4 class="card-title"><span>VAL</span><br>MUE</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- hero-section-end  -->
+
+
+		<!-- third-section start -->
+		<div class="third-section">
+			<div class="container">
+				<div class="row g-0 align-items-center">
+					<div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-9 my-0">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Hi! I am Val and I like pushing the boundaries between TECH and
+									VISUAL.</h4>
+								<p class="card-text t1">Here are a few projects, pitch work and design explorations I’ve
+									done
+									<br>
+									for clients. Not everything, but a sneak peek – before I run to get the best bad
+									food at <a href="http://goldies-berlin.de/" target="_blank">goldies.</a>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-9 my-0">
+						<div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 g-4 gbg">
+							<div class="col mt-0">
+								<div class="card h-100">
+									<div class="card-body">
+										<p class="card-text ">YEARS OF EXPERIENCE</p>
+										<div class="anime">
+											<!-- <h5 class="card-title span">2</h5> -->
+											<h5 class="card-title fade-in-element">2</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mt-0">
+								<div class="card h-100">
+									<div class="card-body">
+										<p class="card-text ">PROJECTS COMPLETED</p>
+										<div class="anime">
+											<!-- <h5 class="card-title span">20+</h5> -->
+											<h5 class="card-title fade-in-element">20+</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mt-0">
+								<div class="card h-100">
+									<div class="card-body">
+										<p class="card-text ">HAPPY CLIENTS</p>
+										<div class="anime">
+											<!-- <h5 class="card-title span">15+</h5> -->
+											<h5 class="card-title fade-in-element">15+</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- third-section-end  -->
+		<div id="branches"></div>
+		<!-- forth section start -->
+		<div class="forth-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-12 col-lg-12 col-xl-11 col-xxl-10 my-0">
+						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./coming-soon.php" class="card-title">Creative Direction</a>
+									</div>
+								</div>
+							</div>
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./coming-soon.php" class="card-title">Fashion Design</a>
+									</div>
+								</div>
+							</div>
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./product-design.php" class="card-title">Product Design</a>
+									</div>
+								</div>
+							</div>
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./ui-design.php" class="card-title">UI Design</a>
+									</div>
+								</div>
+							</div>
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./coming-soon.php" class="card-title">UX Writing</a>
+									</div>
+								</div>
+							</div>
+							<div class="col justify-content-center justify-content-sm-start">
+								<div class="card">
+									<div class="card-body">
+										<a href="./visuals.php" class="card-title">Visuals</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- forth section  end -->
+
+		<!-- fifth section start  -->
+		<div class="fifth-section" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-0">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">That’s it! Now it’s your turn to say hi.</h4>
+								<!-- <a href="#" type="button" onclick="popup()">Let’s talk.</a> -->
+								<button onclick="popup()">Let's talk.</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fifth section end  -->
+		<!-- popup contact form  -->
+		<section class="contact-wrapper popup-contact d-none" id="popup-contact">
+			<div class="container">
+				<div class="row row-wrapper">
+					<div class="col-10 col-sm-10 mx-auto col-md-6">
+						<div class="form-wrapper">
+							<form action="https://formspree.io/f/xzbqbjpq" method="post">
+								<div class="form-header">
+									<h1>Gimme gimme gimme</h1>
+									<img src="./assets/img/ico_close.svg" alt="close" id="close-popup">
+								</div>
+								<div>
+									<input type="text" name="name" class="form-input" id="name" placeholder="Your Name"
+										required>
+								</div>
+								<div>
+									<input type="email" name="email" id="email" class="form-input"
+										placeholder="Your Email" required>
+								</div>
+								<div>
+									<textarea name="message" id="textarea" rows="5"
+										placeholder="Your Message"></textarea>
+								</div>
+								<input type="submit" value="Send" style="color: #AFF8A2;" class="main-btn">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- popup contact form  -->
+		<!-- footer start  -->
+		<div class="footer">
+			<a href="https://dribbble.com/mvmollerstein/" target="_blank">dribble</a>
+			<a href="https://www.instagram.com/mvmollerstein/" target="_blank">instagram</a>
+			<a href="https://www.behance.net/mvmollerstein/moodboards" target="_blank">behace</a>
+		</div>
+		<!-- footer end  -->
+	</div>
+
+
+
+
+	<script src="./assets/js/custom.js"></script>
+
+
+	<script>
+		var elements = document.getElementsByClassName("fade-in-element");
+
+		function checkPosition() {
+			for (var i = 0; i < elements.length; i++) {
+				var element = elements[i];
+				var position = element.getBoundingClientRect();
+
+
+				var viewportCenter = window.innerHeight / 2;
+				// var viewportCenter = window.innerHeight;
+
+				// position.top <= viewportCenter + 100 && position.top >= viewportCenter - 100
+				if (position.top <= viewportCenter + 250 && position.top >= viewportCenter - 250) {
+				// if (position.top < window.innerHeight && position.bottom >= 0) {
+					element.classList.add("visible");
+				}
+				// else {
+				// 	element.classList.remove("visible");
+				// }
+			}
+		}
+
+		checkPosition();
+		window.onscroll = checkPosition;
+
+
+
+		const popupcontact = document.getElementById("popup-contact");
+		function popup() {
+			popupcontact.classList.remove('d-none');
+			setTimeout(() => {
+				popupcontact.style.opacity = 1;
+			}, 600);
+		}
+		const close = document.getElementById("close-popup");
+		close.addEventListener("click", () => {
+			popupcontact.classList.add('d-none');
+			setTimeout(() => {
+				popupcontact.style.opacity = 0;
+			}, 500);
+		})
+
+
+
+		let menuformob = document.getElementById("menuformob");
+		function menupopup() {
+			menuformob.classList.remove("d-none");
+		}
+		let indexmenu = document.getElementById("index-menu");
+		indexmenu.addEventListener("click", () => {
+			menuformob.classList.add("d-none");
+
+		})
+	</script>
+
+	<script>
+
+		function loader() {
+			const myTimeout = setTimeout(timeloader, 1000);
+		}
+		function timeloader() {
+			let cssloader = document.getElementById("css-loader");
+			let bodywrapper = document.getElementById("body-wrapper");
+			bodywrapper.style.display = "block";
+			cssloader.style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- Hi thanks you for your message and your update: 🙃
+
+Some things I mentioned in the previous pdfs are not functioning properly/were not taken into account.
+
+- Yes everything in mobile can be #000000
+- So lets keep the spaces between the words of branches-navi as they are - but pls remove the MENU here again
+
+If we could try to make the following things work until then I am very happy. 👍🏼
+
+1. Fontstyle of Branches on Landingpage as they were before, sorry for changing it back
+2. “Lets talk” button (link to form) is not working / so I cannot check this site
+3. Animation ist not working on Landingpage, only in mobile (not appearing form side, but from below/vertical)
+4. “Insert Password” in same text - style as in contact form “your name”/“your password“
+
+1. MOBILE: Only the numbers should be animated, not the text above, also not appearing form side, but from below/vertical
+2. MOBILE: Button outline in Web of “Lets talk” still missing.
+3. MOBILE: Menu/branches/contact - text align right and less space between them, if possible
+4. MOBILE: green rectangles are still not in sync/ not overlaying text everywhere, especially branches on landingpage
+
+Thank u! U can of course extend time until next week.
+
+Best, Val -->

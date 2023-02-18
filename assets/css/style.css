@@ -1,0 +1,1078 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* some custom css start*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 10px;
+  position: relative;
+  overflow-x: hidden;
+  font-weight: 100 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* navbar  */
+.index {
+  top: 0rem;
+  position: absolute;
+  right: 0rem;
+  background-color: #fff;
+  z-index: 2;
+}
+.index .ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin: 4.5rem 3rem;
+}
+.index .ul .nav-item .nav-link {
+  color: #CCCCCC;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 3.3rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: right;
+  color: #000;
+}
+.index .ul .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: -1rem;
+  right: -2rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+}
+.index .ul .nav-item .nav-link:hover a {
+  color: #000000;
+}
+.index .ul .nav-item .nav-link:hover::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.index .ul .nav-item .dropdown-menu1 {
+  display: none;
+  -webkit-animation: taadaa1 0.4s;
+          animation: taadaa1 0.4s;
+  transition: all 0.4s ease-in-out;
+}
+@-webkit-keyframes taadaa1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes taadaa1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.index .ul .nav-item:hover .dropdown-menu1 {
+  display: block;
+  border: none;
+  -webkit-animation: taadaa 0.4s;
+          animation: taadaa 0.4s;
+}
+@-webkit-keyframes taadaa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes taadaa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.index .ul .dropdown-menu1 {
+  left: -3.5rem !important;
+  position: static !important;
+  list-style: none;
+}
+.index .ul .dropdown-menu1 .dropdown-item {
+  text-align: end;
+  margin-right: 0;
+  transition: all 0.3s ease-out;
+  padding: 0.5rem 0rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: #CCCCCC;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.index .ul .dropdown-menu1 .dropdown-item:hover {
+  color: #000000;
+  background: transparent;
+}
+
+.navbar.index .manu {
+  width: 100%;
+}
+.navbar.index .manu ul {
+  list-style: none;
+  margin: 0rem;
+  width: 100%;
+  padding: 4.5rem 3rem;
+}
+.navbar.index .manu ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-align: right;
+  line-height: 3.3rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0rem;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+}
+.navbar.index .manu ul li a {
+  color: #CCCCCC;
+  transition: all 0.3s ease-in-out;
+  text-align: right;
+  cursor: pointer;
+  margin: 0rem;
+  display: block;
+}
+.navbar.index .manu ul li:hover a, .navbar.index .manu ul li.active a {
+  color: #000000;
+}
+.navbar.index .manu ul .menu {
+  margin-bottom: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.navbar.index .manu ul .menu a {
+  color: #000;
+}
+
+.navbar.navbar-wrapper {
+  position: relative;
+  top: 0rem;
+  left: 0;
+  text-align: center;
+  padding: 0rem !important;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 9rem;
+  justify-content: center;
+  background: #fff;
+  margin: 0rem 3rem;
+}
+.navbar.navbar-wrapper .navbar-toggler {
+  font-size: 2rem;
+  color: #000000;
+  border: none;
+}
+.navbar.navbar-wrapper .navbar-toggler:focus, .navbar.navbar-wrapper .navbar-toggler:hover {
+  box-shadow: none;
+  outline: none;
+}
+.navbar.navbar-wrapper .navbar-brand {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.navbar.navbar-wrapper .navbar-brand i {
+  font-size: 2rem;
+  color: #000000;
+}
+.navbar.navbar-wrapper .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop .nav-link {
+  color: #CCCCCC;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 3.3rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: right;
+  color: #000;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop .nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: -1rem;
+  right: -2rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop .nav-link:hover a {
+  color: #000000;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop .nav-link:hover::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop .dropdown-menu1 {
+  display: none;
+  -webkit-animation: taadaa1 0.4s;
+          animation: taadaa1 0.4s;
+  transition: all 0.4s ease-in-out;
+}
+@keyframes taadaa1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item.menudrop:hover .dropdown-menu1 {
+  display: block;
+  border: none;
+  -webkit-animation: taadaa 0.4s;
+          animation: taadaa 0.4s;
+}
+@keyframes taadaa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbar.navbar-wrapper .navbar-nav .dropdown-menu1 {
+  right: 0rem !important;
+  background-color: #fff;
+  list-style: none;
+  position: absolute;
+  padding: 0rem 1rem;
+}
+.navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item {
+  text-align: end;
+  margin-right: 0;
+  transition: all 0.3s ease-out;
+  padding: 0.5rem 0rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: #CCCCCC;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item::after {
+  position: absolute;
+  content: "";
+  bottom: -0.7rem;
+  right: -1.5rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item:hover, .navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item.active {
+  color: #000000;
+  background: transparent;
+}
+.navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item:hover::after, .navbar.navbar-wrapper .navbar-nav .dropdown-menu1 .dropdown-item.active::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item {
+  padding: 1rem 0rem;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link {
+  text-align: center;
+  margin-right: 0;
+  transition: all 0.3s ease-out;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: #CCCCCC;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  right: 0rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link:hover, .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.active {
+  color: #000000;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link:hover::after, .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.active::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+  width: 0rem !important;
+  height: 0rem !important;
+  padding: 0rem;
+}
+.navbar.navbar-wrapper .navbar-nav.indexnav {
+  flex-direction: column;
+  width: unset;
+  margin: 2rem 0rem;
+  position: relative;
+}
+.navbar.navbar-wrapper .navbar-nav.indexnav .nav-item {
+  padding: 0rem;
+}
+.navbar.navbar-wrapper .navbar-nav.indexnav .nav-item .nav-link {
+  text-align: end;
+}
+
+.navbar.commingsoon .navbar-nav .nav-item .nav-link:hover, .navbar.commingsoon .navbar-nav .nav-item .nav-link.active {
+  color: #CCCCCC;
+}
+.navbar.commingsoon .navbar-nav .nav-item .nav-link:hover::after, .navbar.commingsoon .navbar-nav .nav-item .nav-link.active::after {
+  background-color: transparent;
+}
+
+.navbar.navbar-wrapper.index {
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.navbar.nav-scroll {
+  width: 100%;
+  background-color: #272b3a;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  top: 0rem !important;
+}
+
+/* navbar  */
+.mobile-menu {
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 3rem;
+  left: 0rem;
+  padding: 2rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu img {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.mobile-menu ul {
+  list-style: none;
+}
+.mobile-menu ul .nav-item {
+  padding: 1rem 0rem;
+  text-align: center;
+}
+.mobile-menu ul .nav-item .nav-link {
+  margin-right: 0;
+  transition: all 0.3s ease-out;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: #CCCCCC;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.mobile-menu ul .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  right: 0rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.mobile-menu ul .nav-item .nav-link:hover, .mobile-menu ul .nav-item .nav-link.active {
+  color: #000000;
+}
+.mobile-menu ul .nav-item .nav-link:hover::after, .mobile-menu ul .nav-item .nav-link.active::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.mobile-menu ul .nav-item .nav-link.dropdown-toggle::after {
+  width: 0rem !important;
+  height: 0rem !important;
+  padding: 0rem;
+}
+
+.password-section {
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  z-index: 10;
+  background-color: #fff;
+  flex-direction: column;
+}
+.password-section .row {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.password-section .row .card {
+  border: none;
+  padding: 0rem;
+}
+.password-section .row .card .card-body {
+  padding: 0rem;
+}
+.password-section .row .card .card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #000000;
+  margin-bottom: 5rem;
+}
+.password-section .row .card .card-body .card-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+.password-section .row .card .card-body .card-text a {
+  color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  font-weight: 200;
+}
+.password-section .row .card .card-body .card-text a::after {
+  position: absolute;
+  content: "";
+  bottom: 0rem;
+  right: -1rem;
+  width: 3.5rem;
+  height: 1.5rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.password-section .row .card .card-body .card-text a:hover, .password-section .row .card .card-body .card-text a.active {
+  color: #000000;
+}
+.password-section .row .card .card-body .card-text a:hover::after, .password-section .row .card .card-body .card-text a.active::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.password-section .row label {
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #000000;
+  text-align: end;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.password-section .row input {
+  margin-top: 3rem;
+  outline: none;
+  font-weight: 100;
+  box-shadow: none;
+  border-radius: 10rem;
+  width: 100%;
+  padding: 1rem 3rem;
+  outline: none;
+  border: 0.5px solid #CCCCCC;
+  font-size: 1.6rem;
+  color: #CCCCCC;
+}
+.password-section .row input::-moz-placeholder {
+  color: #CCCCCC;
+}
+.password-section .row input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.password-section .row input::placeholder {
+  color: #CCCCCC;
+}
+.password-section .row input[type=submit] {
+  font-weight: 300;
+}
+.password-section .row .btnn {
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  color: #CCCCCC;
+  font-size: 2rem;
+  border: none;
+  margin-top: 1rem;
+  display: block;
+  font-weight: 100;
+  width: 100%;
+  transition: color 0.4s ease-in-out;
+  margin-bottom: 0rem;
+  font-weight: 300;
+  border: none;
+  background-color: transparent;
+  margin-top: 3rem;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  outline: none;
+  box-shadow: none;
+  border-radius: 10rem;
+}
+.password-section .row #wrong {
+  font-size: 2rem;
+  color: red;
+}
+
+.page-title {
+  font-size: 4rem;
+  color: #CCCCCC;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+/* hero section start  */
+.hero-section .row {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+}
+.hero-section .row .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15rem;
+  line-height: 16rem;
+  letter-spacing: 0.13em;
+  color: #000000;
+  text-align: center;
+}
+.hero-section .row .card-title span {
+  letter-spacing: 0.25em;
+}
+.hero-section .row .card {
+  border: none;
+}
+
+.visuals-sec {
+  margin-bottom: 15rem;
+}
+.visuals-sec .row {
+  margin: 0rem 2rem;
+}
+.visuals-sec .row .card {
+  border: none;
+  padding: 0rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  border: none;
+}
+.visuals-sec .row .card::after {
+  position: absolute;
+  content: "";
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  right: 0rem;
+  bottom: 0rem;
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: all 0.7s ease-in-out;
+}
+.visuals-sec .row .card:hover::after {
+  background-color: transparent;
+}
+.visuals-sec .row .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+.visuals-sec .r1p-1 .card img {
+  max-height: 21rem;
+  min-height: 21rem;
+}
+.visuals-sec .r2p-1 .card img {
+  max-height: 19rem;
+  min-height: 19rem;
+}
+.visuals-sec .r2p-2 img {
+  max-height: 44rem;
+  min-height: 44rem;
+}
+.visuals-sec .r2p-3 img {
+  max-height: 24.5rem;
+  min-height: 24.5rem;
+}
+
+.product-design-sec {
+  margin: 0rem 2rem;
+  margin-bottom: 15rem;
+}
+.product-design-sec .card {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+.product-design-sec .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+.product-design-sec .card::after {
+  position: absolute;
+  content: "";
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  right: 0rem;
+  bottom: 0rem;
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: all 0.7s ease-in-out;
+}
+.product-design-sec .card:hover::after {
+  background-color: transparent;
+}
+.product-design-sec .card .pimg-1,
+.product-design-sec .card .pimg-2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 20rem;
+  min-height: 20rem;
+}
+.product-design-sec .card .pimg3 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 40rem;
+  min-height: 40rem;
+}
+.product-design-sec .card .pimg4 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 35rem;
+  min-height: 35rem;
+}
+.product-design-sec .card .pimg5 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 55rem;
+  min-height: 55rem;
+}
+
+.ui-design-sec {
+  margin: 0rem 2rem;
+  margin-bottom: 15rem;
+}
+.ui-design-sec .card {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  border: none;
+}
+.ui-design-sec .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+.ui-design-sec .card::after {
+  position: absolute;
+  content: "";
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  right: 0rem;
+  bottom: 0rem;
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: all 0.7s ease-in-out;
+}
+.ui-design-sec .card:hover::after {
+  background-color: transparent;
+}
+.ui-design-sec .ui-img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 47rem;
+  min-height: 47rem;
+}
+.ui-design-sec .ui-img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 33rem;
+  min-height: 33rem;
+}
+.ui-design-sec .ui-img3 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 13rem;
+  min-height: 13rem;
+}
+.ui-design-sec .ui-img4,
+.ui-design-sec .ui-img5 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 46.5rem;
+  min-height: 46.5rem;
+}
+.ui-design-sec .ui-img6,
+.ui-design-sec .ui-img7,
+.ui-design-sec .ui-img8 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 30rem;
+  min-height: 30rem;
+}
+
+/* hero section  end*/
+/* third section start*/
+.third-section {
+  padding: 10rem 0rem 35rem 0rem;
+}
+.third-section .row {
+  padding: 0rem 2rem;
+}
+.third-section .card {
+  border: none;
+  margin-top: 3rem;
+}
+.third-section .card .card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #000000;
+  margin-bottom: 5rem;
+}
+.third-section .card .card-body .card-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #000000;
+  margin-bottom: 0rem;
+}
+.third-section .card .card-body .card-text.t1 {
+  margin-bottom: 3rem;
+}
+.third-section .card .card-body .card-text a {
+  color: #000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 200;
+}
+.third-section .card .card-body .card-text a::after {
+  position: absolute;
+  content: "";
+  bottom: -1rem;
+  right: -1rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.third-section .card .card-body .card-text a:hover::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+.third-section .gbg .card .card-body .card-title {
+  margin-bottom: 0rem;
+}
+
+/* third section end*/
+.d-none {
+  transition: all 0.9s ease-in-out;
+}
+
+/* forth section start*/
+.forth-section {
+  padding: 25rem 0rem 25rem 0rem;
+}
+.forth-section .col {
+  display: flex;
+}
+.forth-section .card {
+  border: none;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.forth-section .card .card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 6rem;
+  color: #000000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 100;
+}
+.forth-section .card .card-body .card-title::after {
+  position: absolute;
+  content: "";
+  bottom: 0.5rem;
+  right: -1rem;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.forth-section .card .card-body .card-title:hover::after {
+  background: rgba(175, 248, 162, 0.65);
+}
+
+/* forth section end*/
+/* fifth section start*/
+.fifth-section {
+  padding: 40rem 0rem 40rem 0rem;
+}
+.fifth-section .row {
+  padding: 0rem 2rem;
+}
+.fifth-section .card {
+  border: none;
+}
+.fifth-section .card .card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+.fifth-section .card .card-body button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border: 0.5px solid #000000;
+  border-radius: 10rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #000000;
+  padding: 0.5rem 7rem;
+  background-color: white;
+}
+
+/* fifth section end*/
+/* footer section start*/
+.footer {
+  height: 5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 5rem 0rem;
+}
+.footer a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.8rem;
+  line-height: 27px;
+  color: #CCCCCC;
+}
+.footer a:hover {
+  color: #000;
+}
+
+/* footer section end*/
+.contact-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 999999;
+}
+.contact-wrapper .form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0rem;
+  padding: 0rem;
+}
+.contact-wrapper .form-wrapper form {
+  width: 100%;
+}
+.contact-wrapper .form-wrapper .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.contact-wrapper .form-wrapper .form-header h1 {
+  font-size: 3.5rem;
+  color: #CCCCCC;
+  font-weight: 100;
+}
+.contact-wrapper .form-wrapper .form-header img {
+  cursor: pointer;
+}
+.contact-wrapper .form-wrapper input {
+  width: 100%;
+  padding: 1rem 3rem;
+  margin: 1rem 0rem;
+  outline: none;
+  font-weight: 100;
+  box-shadow: none;
+  border: 0.5px solid #CCCCCC;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper input::-moz-placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper input::placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper input.textarea {
+  height: 15rem;
+  border-radius: 4rem;
+}
+.contact-wrapper .form-wrapper textarea {
+  width: 100%;
+  padding: 1rem 3rem;
+  margin: 1rem 0rem;
+  outline: none;
+  border: 0.5px solid #CCCCCC;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  color: #CCCCCC;
+  resize: none;
+  font-weight: 100;
+}
+.contact-wrapper .form-wrapper textarea::-moz-placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper textarea::placeholder {
+  color: #CCCCCC;
+}
+.contact-wrapper .form-wrapper input[type=submit] {
+  width: 100%;
+  transition: color 0.4s ease-in-out;
+  margin-bottom: 0rem;
+  font-weight: 300;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  outline: none;
+  box-shadow: none;
+  border-radius: 10rem;
+}
+.contact-wrapper .form-wrapper input[type=submit]:hover {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
